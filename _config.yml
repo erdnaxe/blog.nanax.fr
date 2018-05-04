@@ -1,0 +1,36 @@
+title: erdnaxe's projects
+email: erdnaxe78@gmail.com
+description: >- 
+  Articles about hacking things around, randomly written by Alexandre Iooss.
+baseurl: ""
+url: "https://erdnaxe.github.io"
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Theme customisation
+github_username: erdnaxe
+
+minima:
+  date_format: "%b %Y"
+
+disqus:
+    shortname: erdnaxe-github-io
+
+google_analytics: UA-73415056-1
+
+header_pages:
+ - categories/custom_firmware.html
+ - categories/microcontroller.html
+ - categories/3d_printer.html
+ - categories/miscellaneous.html
+ - about.md
+
+permalink: /:title/
+

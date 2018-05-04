@@ -1,0 +1,29 @@
+body{
+  text-align: justify;
+}
+
+.responsive-iframe {
+  position:relative;
+  padding-bottom:56.25%;
+  padding-top:25px;
+  height:0;
+  margin-bottom:15px;
+  
+  iframe {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+  }
+}
+
+.right-image {
+  float: right;
+  width: 200px;
+  margin-left: 12px;
+  margin-bottom: 12px;
+}
+
+// Make the menu accessible on homepage
+.site-nav { z-index: 1; }
