@@ -133,6 +133,7 @@ You can talk to the microcontroller driving the led with the following Python sc
 ```python
 from random import randrange
 import sys
+from time import sleep
 
 # Available colors
 colors = {
