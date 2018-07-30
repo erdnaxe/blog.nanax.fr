@@ -16,6 +16,10 @@ A list of the best board pinout schematics found online.
 
 ## Pinouts from BQ
 
+A full document is available here
+([source](https://github.com/rogerclarkmelbourne/Arduino/blob/master/Arduino_Basic_Connections_by_pighixxx_v2.pdf)) :
+[Full document (without microcontrollers)]({{ site.baseurl }}/assets/doc/Arduino_Basic_Connections_by_pighixxx_v2.pdf)
+
 * [Arduino UNO]({{ site.baseurl }}/assets/doc/uno.pdf),
   [source](http://diwo.bq.com/pinout-uno/)
 * [Arduino Mega]({{ site.baseurl }}/assets/doc/mega.pdf),
@@ -28,7 +32,6 @@ A list of the best board pinout schematics found online.
   [source](https://manuals.nospace.at/manuals/Arduino_miniPro.pdf)
 * [Arduino Nano]({{ site.baseurl }}/assets/doc/nano.pdf),
   [source](https://www.electronicoscaldas.com/datasheet/Arduino-Nano-V3-Pinout-Pines-Diagrama.pdf)
-
 
 * [BQ Zum]({{ site.baseurl }}/assets/doc/zum.pdf),
   [source](http://diwo.bq.com/pinout-zum/)
