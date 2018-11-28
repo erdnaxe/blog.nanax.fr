@@ -2,6 +2,7 @@ _site/
 .sass-cache/
 .bundle/
 Gemfile.lock
+vendor
 
 # Windows image file caches
 Thumbs.db
@@ -57,3 +58,5 @@ Temporary Items
 # Dolphin file manager
 .directory
 
+# IDE specific
+.idea
