@@ -1,5 +1,4 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
 
 // Change font family
@@ -10,35 +9,37 @@ $solarized-base03: #002b36;
 $solarized-base02: #073642;
 $solarized-base01: #586e75;
 $solarized-base00: #657b83;
-$solarized-base1:  #93a1a1;
-$solarized-base2:  #eee8d5;
-$solarized-base3:  #fdf6e3;
+$solarized-base1: #93a1a1;
+$solarized-base2: #eee8d5;
+$solarized-base3: #fef7e4;
 $solarized-orange: #cb4b16;
 
 // Minima colors
-$text-color:       $solarized-base03;
+$text-color: $solarized-base03;
 $background-color: $solarized-base3;
-$brand-color:      $solarized-orange;
+$brand-color: $solarized-orange;
 
-$grey-color:       $solarized-base01;
+$grey-color: $solarized-base01;
 $grey-color-light: $solarized-base00;
-$grey-color-dark:  $solarized-base02;
+$grey-color-dark: $solarized-base02;
 
 // Larger content
-$content-width:    1000px;
+$content-width: 1000px;
 
 // LaTeX-like figure environment
 figure {
   display: block;
   margin: 20px 0;
-  
+
   img {
     display: block;
     width: 100%;
     max-width: 620px;
     margin: 5px auto;
   }
-  figcaption { text-align: center; }
+  figcaption {
+    text-align: center;
+  }
   figcaption:before {
     content: 'Figure - ';
     font-variant: small-caps;
@@ -46,9 +47,7 @@ figure {
 }
 
 // Import everything else
-@import
-  "minima",
-  "syntax-highlighting",
-  "timeline",
-  "layout"
-;
+@import "minima";
+@import "syntax-highlighting";
+@import "timeline";
+@import "layout";
