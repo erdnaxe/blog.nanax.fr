@@ -12,6 +12,7 @@ lang: en
 Blobbyfish was implemented for a VHDL academic course project in 8 hours.
 It is based on Flappy Bird but a little bit simplified for the purpose.
 
+This is a team project made with [Otthorn](https://gitlab.crans.org/Otthorn).
 It was a great project to start coding in VHDL and explore all main concepts.
 Please note that this was implemented for
 the **Digilent Basys 2** using **Xilinx ISE**.
