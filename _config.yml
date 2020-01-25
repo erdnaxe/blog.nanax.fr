@@ -1,9 +1,7 @@
-title: Alexandre Iooss personal blog
+title: Alexandre's blog
 email: erdnaxe@crans.org
 description: >- 
-  Articles about hacking things around, randomly written by Alexandre Iooss.
-  PGP key 0x3FCDCC02,
-  fingerprint 2D37 1AD2 7E2B BC77 97E1 B759 6C79 278F 3FCD CC02.
+  Random stuff randomly written.
 baseurl: ""
 url: "https://alexandre.iooss.fr"
 
@@ -21,6 +19,9 @@ github_username: erdnaxe
 
 minima:
   date_format: "%b %Y"
+  skin: solarized
+
+rss: RSS feed
 
 disqus:
     shortname: erdnaxe-github-io
