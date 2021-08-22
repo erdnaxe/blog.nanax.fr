@@ -26,8 +26,6 @@ rss: RSS feed
 disqus:
     shortname: erdnaxe-github-io
 
-google_analytics: UA-73415056-1
-
 header_pages:
  - categories/custom_firmware.html
  - categories/microcontroller.html
