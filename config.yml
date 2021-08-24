@@ -39,7 +39,7 @@ params:
     - name: rss
       url: "/index.xml"
   editPost:
-    URL: "https://github.com/erdnaxe/blog.nanax.fr/blob/master"
+    URL: "https://github.com/erdnaxe/blog.nanax.fr/blob/master/content"
     appendFilePath: true
 
 menu:
