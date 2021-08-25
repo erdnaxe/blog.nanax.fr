@@ -8,12 +8,6 @@ keywords: ["android", "debrick", "archos", "diamond", "50", "ac50da"]
 aliases: ["/debrick-archos-50-diamond/"]
 ---
 
-> **WARNING:**
-> THIS METHOD OF HACKING IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND. If
-> you lose your data, brick your device, any other damage or anything else
-> happens (e.g. your cat eats your dog), it is YOUR PROBLEM and YOUR
-> RESPONSIBILITY. Your device warranty is most probably void after doing this.
-
 ## Initial step: How are we going to debrick?
 
 This guide works if Android doesn't boot (or freeze), and no recovery is accessible.
@@ -31,6 +25,12 @@ This guide works if Android doesn't boot (or freeze), and no recovery is accessi
 * An Archos 50 Diamond (ac50da),
 * A MicroSD Card,
 * A cool MicroUSB cable of course.
+
+> **WARNING:**
+> THIS METHOD OF HACKING IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND. If
+> you lose your data, brick your device, any other damage or anything else
+> happens (e.g. your cat eats your dog), it is YOUR PROBLEM and YOUR
+> RESPONSIBILITY. Your device warranty is most probably void after doing this.
 
 ## First step: How to go into Fastboot mode?
 

@@ -39,6 +39,8 @@ X11 does include a specific layout for Chromebook keyboards. To activate it, run
 localectl set-x11-keymap fr chromebook
 ```
 
+Change `fr` (french layout) depending on your keyboard layout.
+
 Right `alt` will behave as a modifier to access `F1` to `F10`, `PageUp`, `PageDown`, `CapsLock`, `Delete`...
 
 <figure>
