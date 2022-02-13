@@ -23,6 +23,7 @@ params:
     Title: "Welcome to my blog 🦋"
     Content: |
       ## Highlighted projects
+      - [grimorio](https://grimorio.org/) &ndash; Index daemons from various GNU/Linux distributions
       - [bmpc](https://github.com/erdnaxe/bmpc) &ndash; Minimalist Music Player Deamon client in browser
       - [web2pdf](https://github.com/erdnaxe/web2pdf/) &ndash; Print any web page as PDF document, even JavaScript generated ones
       - [pass-group](https://github.com/erdnaxe/pass-group/) &ndash; Group password manager extension for the standard unix password manager
