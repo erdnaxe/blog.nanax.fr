@@ -24,6 +24,9 @@
     <link rel="icon" type="image/png" href="{{ default "favicon.png" | absURL }}">
     {{ range .AlternativeOutputFormats }}{{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}{{ end }}
     {{ range .AllTranslations }}<link rel="alternate" hreflang="{{- .Lang -}}" href="{{- .Permalink -}}" />{{ end }}
+
+    <script defer src="{{ "js/katex.min.js" | relURL }}"></script>
+    <script defer src="{{ "js/auto-render.min.js" | relURL }}" onload="renderMathInElement(document.body);"></script>
 </head>
 
 <body class="{{ if (or (ne .Kind `page` ) (eq .Layout `archives`)) }}{{ print "list" }}{{ end }}">
