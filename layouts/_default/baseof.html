@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; script-src 'self' https://isso.nanax.fr/js/; style-src 'self' 'unsafe-inline' https://isso.nanax.fr/css/; font-src 'self'; connect-src 'self' https://isso.nanax.fr/">
+    <meta http-equiv="Referrer-Policy" content="no-referrer">
 
     <title>{{ if not .IsHome }}{{ if .Title }}{{ .Title }} | {{ end }}{{ end }}{{ .Site.Title }}</title>
 
