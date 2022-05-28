@@ -16,17 +16,14 @@
         {{- with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
     <meta name="author" content="{{ .Site.Params.author }}">
     {{ hugo.Generator }}
-    {{ template "_internal/opengraph.html" . }}
+    {{ template "_internal/opengraph.html" . -}}
     {{ template "_internal/twitter_cards.html" . }}
-    <link rel="canonical" href="{{ if .Params.canonicalURL }}{{ trim .Params.canonicalURL " " }}{{ else }}{{ .Permalink }}{{ end }}" />
     {{- $stylesheet := (resources.Match "css/*.css") | resources.Concat "assets/css/common.css" | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $stylesheet.RelPermalink }}" integrity="{{ $stylesheet.Data.Integrity }}">
+    {{- $js := resources.Get "js/main.js" | js.Build | minify | fingerprint }}
+    <script type="text/javascript" src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
     <link rel="icon" type="image/png" href="{{ default "favicon.png" | absURL }}">
     {{ range .AlternativeOutputFormats }}{{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}{{ end }}
-    {{ range .AllTranslations }}<link rel="alternate" hreflang="{{- .Lang -}}" href="{{- .Permalink -}}" />{{ end }}
-
-    <script defer src="{{ "js/katex.min.js" | relURL }}"></script>
-    <script defer src="{{ "js/auto-render.min.js" | relURL }}" onload="renderMathInElement(document.body);"></script>
 </head>
 
 <body class="{{ if (or (ne .Kind `page` ) (eq .Layout `archives`)) }}{{ print "list" }}{{ end }}">
