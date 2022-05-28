@@ -1,7 +1,6 @@
 baseURL: https://blog.nanax.fr/
 title: erdnaxe's blog
 paginate: 5
-theme: custom
 
 enableRobotsTXT: true
 enableEmoji: true
