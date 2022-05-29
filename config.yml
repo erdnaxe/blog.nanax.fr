@@ -17,6 +17,7 @@ menu:
 
 params:
   keywords: [blog, erdnaxe, hardware, software, system, administration]
+  description: Blog posts about hardware development and system administration.
   author: Alexandre Iooss
   homeInfoParams:
     Title: "Welcome to my blog 🦋"
