@@ -1,6 +1,6 @@
 ---
 categories:
-- Hardware security
+- Hardware
 date: "2022-05-08"
 title: "Write-up X-Factor (FCSC 2022)"
 description: "Write-up of the X-Factor challenge of French Cybersecurity Challenge 2022."

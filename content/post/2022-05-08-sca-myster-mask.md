@@ -1,6 +1,6 @@
 ---
 categories:
-- Hardware security
+- Hardware
 date: "2022-05-08"
 title: "Write-up Myster Mask (FCSC 2022)"
 description: "Write-up of the Myster Mask side-channel analysis challenge of French Cybersecurity Challenge 2022."

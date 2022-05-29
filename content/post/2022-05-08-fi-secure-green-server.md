@@ -1,6 +1,6 @@
 ---
 categories:
-- Hardware security
+- Hardware
 date: "2022-05-08"
 title: "Write-up Secure Green Server (FCSC 2022)"
 description: "Write-up of the Secure Green Server fault injection challenge of French Cybersecurity Challenge 2022."

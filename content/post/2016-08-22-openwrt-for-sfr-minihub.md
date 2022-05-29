@@ -1,6 +1,6 @@
 ---
 categories:
-- Software
+- Hardware
 date: "2016-08-22"
 title: "OpenWRT on the SFR Minihub"
 description: "A step-by-step guide to explain how I managed to flash OpenWRT on my SFR Minihub"

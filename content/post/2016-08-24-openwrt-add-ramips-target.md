@@ -1,6 +1,6 @@
 ---
 categories:
-- Software
+- Hardware
 date: "2016-08-24"
 title: "Ramips device porting on OpenWRT"
 description: "A step-by-step guide to explain how you can add a new ramips (Ralink and MediaTek) target on OpenWRT"

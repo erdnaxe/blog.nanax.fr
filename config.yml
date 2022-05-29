@@ -1,6 +1,6 @@
 baseURL: https://blog.nanax.fr/
 title: erdnaxe's blog
-paginate: 5
+paginate: 10
 
 enableRobotsTXT: true
 enableEmoji: true
@@ -8,12 +8,6 @@ enableEmoji: true
 markup:
   highlight:
     lineNos: true
-
-menu:
-  main:
-  - name: Intranet
-    url: https://intranet.crans.org/login/
-    weight: 50
 
 params:
   keywords: [blog, erdnaxe, hardware, software, system, administration]
@@ -49,10 +43,6 @@ menu:
       name: hardware
       url: /categories/hardware
       weight: 10
-    - identifier: software
-      name: software
-      url: /categories/software
-      weight: 11
     - identifier: system-administration
       name: system administration
       url: /categories/system-administration

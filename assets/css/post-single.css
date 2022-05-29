@@ -1,6 +1,6 @@
 .page-header,
 .post-header {
-  margin: 24px auto var(--content-gap) auto;
+  margin: 24px auto var(--gap) auto;
 }
 
 .post-title {
@@ -85,7 +85,7 @@
 .post-content ol,
 .post-content p,
 .post-content ul {
-  margin-bottom: var(--content-gap);
+  margin-bottom: var(--gap);
 }
 
 .post-content ol,

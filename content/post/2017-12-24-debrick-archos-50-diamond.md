@@ -1,6 +1,6 @@
 ---
 categories:
-- Software
+- Hardware
 date: "2017-12-24"
 title: "Archos 50 Diamond debricking"
 description: "Debricking of an Archos 50 Diamond (ac50da) using Fastboot."
