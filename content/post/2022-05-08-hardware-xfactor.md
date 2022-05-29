@@ -9,17 +9,18 @@ keywords: ["FCSC", "2022", "x-factor"]
 
 ## Official description
 
-> Un commanditaire vous a demandé de récupérer les données ultra secrètes d'une entreprise concurrente. Vous avez tenté plusieurs approches de recherche de vulnérabilités sur les serveurs exposés qui se sont malheureusement révélées infructueuses : les serveurs de l'entreprise ont l'air solides et bien protégés. L'intrusion physique dans les locaux paraît complexe vu tous les badges d'accès nécessaires et les caméras de surveillance.
-> 
-> Une possibilité réside dans l'accès distant qu'ont les employés de l'entreprise à leur portail de travail collaboratif : l'accès à celui-ci se fait via deux facteurs d'authentification, un mot de passe ainsi qu'un token physique à brancher sur l'USB avec reconnaissance biométrique d'empreinte digitale. Même en cas de vol de celui-ci, il sera difficile de l'exploiter. Installer un malware evil maid sur un laptop de l'entreprise n'est pas une option : ceux-ci sont très bien protégés avec du secure boot via TPM, et du chiffrement de disque faisant usage du token.
-> 
-> Mais tout espoir n'est pas perdu ! Vous profitez du voyage en train d'un des employés et de sa fugace absence au wagon bar pour brancher discrètement un sniffer USB miniaturisé sur le laptop. Vous glissez aussi une caméra cachée au dessus de son siège qui n'a pu capturer que quelques secondes. Vous récupérez la caméra et le sniffer furtivement après sa séance de travail : saurez-vous exploiter les données collectées pour mener à bien votre contrat ?
-> 
-> Pour obtenir le flag de `X-Factor 1/2`, vous devez vous logguer avec login et mot de passe. Puis avec le deuxième facteur d'authentification pour obtenir le flag pour `X-Factor 2/2`.
-> 
-> SHA256(`capture_USB.pcapng`) = 1543448477f925070b598f306b59a97610ba013...
+> You have been asked by a client to recover top secret data from a competing company. You have tried several approaches to find vulnerabilities on the exposed servers, which unfortunately proved unsuccessful: the company's servers look solid and well protected. Physical intrusion into the premises seems complex given all the necessary access badges and surveillance cameras.
 >
-> SHA256(`login_password.mkv`) = 0b1361a0261a2cdb13d47d4629c8ec93dc5a7e8...
+> One possibility lies in the remote access that the company's employees have to their collaborative work portal: access to it is done via two authentication factors, a password as well as a physical token to plug into the USB with biometric fingerprint recognition. Even if it is stolen, it will be difficult to exploit it. Installing an evil maid malware on a company laptop is not an option: these are very well protected with secure boot via TPM, and disk encryption using the token.
+>
+> But all hope is not lost! You take advantage of the train trip of one of the employees and of their fleeting absence at the bar to discreetly plug a miniaturized USB sniffer in their laptop. You also slip a hidden camera over their seat which could only capture a few seconds. You retrieve the camera and the sniffer stealthily after their work session: will you be able to exploit the data collected to complete your contract?
+>
+> To get the `X-Factor 1/2` flag, you have to log in with login and password.
+> Then you have to log in with the second authentication factor to get the flag for `X-Factor 2/2`.
+>
+> SHA256(`capture_USB.pcapng`) = `1543448477f925070b598f306b59a97610ba013f7ec4aa5d6c8c2484d555525a`
+>
+> SHA256(`login_password.mkv`) = `0b1361a0261a2cdb13d47d4629c8ec93dc5a7e829ee778d82a7a4a14912f107a`
 
 ## X-Factor 1/2 recap
 

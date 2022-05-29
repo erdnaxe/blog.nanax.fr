@@ -9,33 +9,32 @@ keywords: ["FCSC", "2022", "secure", "green", "server"]
 
 ## Official description
 
-> La société MegaSecure mets à disposition un serveur sécurisé permettant de
-> lancer des opérations tout en maîtrisant la consommation énergétique de ce
-> dernier.
+> The MegaSecure company provides a secure server allowing users to compute
+> operations while controlling its energy consumption.
 > 
-> Le serveur permet d'exécuter des commandes de manière sécurisée. En effet, il
-> repose sur un composant sécurisé afin de vérifier la signature de toute
-> commande reçue avant de l'exécuter.
+> The server allows to execute commands in a secure way. Indeed, it relies
+> on a secure element in order to verify the signature of any command received
+> before executing it.
 > 
-> Le code Python équivalent à la signature est le suivant :
+> The Python code equivalent to the signature process is:
 > 
 > ```Python
 > def sign(self, m):
 >     return pow(int(sha256(m), 16), self.d, self.N)
 > ```
 > 
-> et la vérification est faite de la manière suivante :
+> and the verification process is equivalent to:
 > 
 > ```Python
 > def verif(self, m, s):
 >     return int(sha256(m), 16) == pow(int(s),self.e,self.N)
 > ```
 > 
-> Néanmoins, étant en phase de test seules deux commandes (`ls -la flag.txt` et
-> `cat flag.txt`) sont disponibles. Par ailleurs, il a été remarqué que le
-> serveur présente des comportements étranges dans certaines configurations.
+> However, only two commands (`ls -la flag.txt` and `cat flag.txt`) are
+> available. Moreover, it has been noticed that the server server presents
+> strange behaviors in some configurations.
 > 
-> `nc challenges.france-cybersecurity-challenge.fr 2253`
+> Server: `nc challenges.france-cybersecurity-challenge.fr 2253`
 
 ## Exploration
 

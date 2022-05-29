@@ -9,33 +9,28 @@ keywords: ["FCSC", "2022", "x-factor"]
 
 ## Official description
 
-> Myster Mask a conçu une implémentation qui craint un max !
+> You will have to analyze the consumption traces of an early implementation
+> of the AES made by Myster Mask. Will you be able to exploit these traces to
+> make the *difference*?
 >
-> Vous allez devoir analyser les traces de consommation d'un début
-> d'implémentation de l'AES faite par Myster Mask. Saurez-vous exploiter ces
-> traces pour faire la *différence* ?
->
-> La partie à cibler correspond à l'étape d'**inversion** présente dans le
-> calcul de la boîte S dans le premier tour de l'AES.
-> **Seule cette étape est implémentée**,
-> il n'est pas necessaire de connaître l'AES puisque ce challenge est
-> spécifiquement centré sur l'étape d'inversion.
+> The part to target corresponds to the **inversion step** in the calculation of the
+> S-box in the first round of the AES. **Only this step is implemented**,
+> it is not necessary to know the AES since this challenge is specifically focused
+> on the inversion step.
 > 
-> Les traces de consommation fournies dans le fichier `traces.npz` à charger
-> avec `numpy` correspondent à la ligne suivante dans le code `myster_mask.py` :
+> The consumption traces provided correspond to the following call:
 > 
 > ```Python
 > masked_inversion(L)
 > ```
 >
-> Attention, en tant que bon détective, Myster Mask a protégé cette inversion en
-> faisant honneur à son nom. À vous de jouer !
+> Beware! Myster Mask has protected this inversion by honoring his name.
+> Now it's your turn to play!
 >
-> SHA256(`traces.npz`) = d4e16ded8c53f6e295672567cd8bdd3453ebd1318bf353b...
->
-> SHA256(`inputs.npz`) = 283b4245a36d7d238ba941a247eaaa38cc90d8db2f3c4e7...
+> SHA256(`traces.npz`) = `d4e16ded8c53f6e295672567cd8bdd3453ebd1318bf353b827c40cda17698fe4`
+> SHA256(`inputs.npz`) = `283b4245a36d7d238ba941a247eaaa38cc90d8db2f3c4e7db824d241a6c21603`
 
-We get 4 files: `traces.npz`, `inputs.npz`, `myster_mask.py` and `output.txt`.
+We get 4 files: `traces.npz` (side-channel traces), `inputs.npz` (plaintexts), `myster_mask.py` (the algorithm) and `output.txt` (the ciphertext to decode).
 
 ![Myster Mask speaking](/assets/images/sca-myster-mask/zorro_meme.png)
 
