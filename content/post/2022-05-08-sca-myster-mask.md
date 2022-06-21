@@ -73,9 +73,9 @@ is a nice ressource to understand and solve this challenge.
 They introduce GF256 multiplicative masking
 then in section 2 explains how to setup a differential power analysis of AES.
 
-As `GF256(0)` is 0, calling `mask(0)` will always put a 0 in the first share.
-This implies that if `key[i]` and `input[i]` are equals, then the XOR will be 0
-and the masked first share will be 0.
+As `GF256(0)` equals 0, calling `mask(0)` will always put a 0 in the first share.
+This implies that if `key[i]` and `input[i]` are equals, then
+`key[i] XOR input[i]` is 0 i.e. the masked first share is 0.
 
 Let's attack each \\(i\\)-th key byte separately.
 For each \\(K\\) key byte hypothesis, let's filter \\(M\\) traces in which
