@@ -326,3 +326,5 @@ b'\n'
 ```
 
 This is our flag, `CTF{DoesAnyoneEvenReadFlagsAnymore?}`.
+
+![Based on https://xkcd.com/378/](/assets/images/hardware-weather/xkcd.png)
