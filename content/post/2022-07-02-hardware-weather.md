@@ -4,7 +4,7 @@ categories:
 date: "2022-07-02"
 title: "Write-up Weather (GoogleCTF 2022)"
 description: "Write-up of the Weather challenge of GoogleCTF 2022."
-keywords: ["Google", "CTF", "2022", "hardware", "weather"]
+keywords: ["Google", "CTF", "2022", "writeup", "hardware", "weather"]
 ---
 
 ## Official description
@@ -262,7 +262,7 @@ boucle:
 ```
 
 During EEPROM programming, bits can only be cleared: it is impossible to
-replace `0x00` by `0xFF`.
+replace a `0` by a `1`.
 We choose to put this piece of assembly code at `0x0a02` offset as it
 is filled with `0xFF`. To run this code, we replace the data and code
 before with `0x00` which is a NOP instruction.
