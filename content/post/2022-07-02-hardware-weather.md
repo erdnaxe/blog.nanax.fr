@@ -13,14 +13,19 @@ keywords: ["Google", "CTF", "2022", "hardware", "weather"]
 > OK, to prove it we're going to put a flag in the internal ROM, give you the
 > source code, datasheet, and network access to the interface.
 
-We are given a ZIP file containing `Device Datasheet Snippets.pdf` and
-`firmware.c`.
+We are given a ZIP file containing
+[Device Datasheet Snippets.pdf](https://github.com/google/google-ctf/raw/66de2426aaf3e37e4314714d1eb588d5804c62d6/2022/hardware-weather/attachments/Device%20Datasheet%20Snippets.pdf)
+and
+[firmware.c](https://raw.githubusercontent.com/google/google-ctf/66de2426aaf3e37e4314714d1eb588d5804c62d6/2022/hardware-weather/attachments/firmware.c).
 We are also given a server host and port:
 `weather.2022.ctfcompetition.com:1337`.
 
 ## Exploration
 
-Let's start by reading the datasheet snippets `Device Datasheet Snippets.pdf`:
+### Datasheet snippets
+
+Let's start by reading the datasheet snippets
+[Device Datasheet Snippets.pdf](https://github.com/google/google-ctf/raw/66de2426aaf3e37e4314714d1eb588d5804c62d6/2022/hardware-weather/attachments/Device%20Datasheet%20Snippets.pdf):
 
   * The system is powered by a `CTF-8051` micro-controller, probably based on
     [Intel 8051](https://en.wikipedia.org/wiki/Intel_8051).
@@ -38,7 +43,10 @@ Let's start by reading the datasheet snippets `Device Datasheet Snippets.pdf`:
 **From this point the goal is clear: we need to alter the operation of the weather
 station to read the content of `FlagROM`.**
 
-Let's now read `firmware.c`:
+### Firmware source code
+
+Let's now read
+[firmware.c](https://raw.githubusercontent.com/google/google-ctf/66de2426aaf3e37e4314714d1eb588d5804c62d6/2022/hardware-weather/attachments/firmware.c):
 
   * This firmware exposes a serial command prompt. This command prompt is
     accessible via Netcat:
@@ -327,4 +335,4 @@ b'\n'
 
 This is our flag, `CTF{DoesAnyoneEvenReadFlagsAnymore?}`.
 
-![Based on https://xkcd.com/378/](/assets/images/hardware-weather/xkcd.png)
+{{< figure src="/assets/images/hardware-weather/xkcd.png" title="Based on https://xkcd.com/378/" >}}
