@@ -136,7 +136,7 @@ for pkt in pkt_data:
     broadcast_body.append(len(payload))
 ```
 
-## Decoding of the configuration data
+### Decoding of the configuration data
 
 We implement the inverse of `encode_broadcast_body` of [smartconfig/broadcast.py](https://github.com/ct-Open-Source/tuya-convert/blob/v2.4.5/scripts/smartconfig/broadcast.py).
 
