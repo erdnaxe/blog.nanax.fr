@@ -128,7 +128,7 @@ We can consider a 2-axis drawing robot using the pan and tilt of the gripper.
 
 ### Plotting the letters
 
-We write the following Python script that compute the arm state after each
+We write the following Python script that computes the arm state after each
 command and then plot each succession of movements between resets:
 ```Python
 import matplotlib.pyplot as plt
