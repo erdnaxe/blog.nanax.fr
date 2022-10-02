@@ -2,9 +2,9 @@
 categories:
 - Hardware
 date: "2022-10-01"
-title: "Write-up Tuya (TEC 2022)"
-description: "Write-up of the Tuya challenge of CTF Qualifiers for Team Europe Candidates 2022."
-keywords: ["Google", "CTF", "2022", "writeup", "hardware", "weather"]
+title: "Write-up Tuya (TEC Qualifiers 2023)"
+description: "Write-up of the Tuya challenge of CTF Qualifiers for Team Europe Candidates 2023."
+keywords: ["Tuya", "CTF", "2023", "team", "europe", "network", "wireshark", "UDP", "SSID"]
 ---
 
 ## Official description
