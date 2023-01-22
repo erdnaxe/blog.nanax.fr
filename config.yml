@@ -14,18 +14,14 @@ params:
   description: Blog posts about hardware development and system administration.
   author: Alexandre Iooss
   homeInfoParams:
-    Title: "Welcome to my blog 🦋"
     Content: |
       ## Highlighted projects
-      - [sandboxdb.org](https://sandboxdb.org/) &ndash; Index sandboxing options from various GNU/Linux distributions
       - [bmpc](https://github.com/erdnaxe/bmpc) &ndash; Minimalist Music Player Deamon client in browser
-      - [web2pdf](https://github.com/erdnaxe/web2pdf/) &ndash; Print any web page as PDF document, even JavaScript generated ones
       - [pass-group](https://github.com/erdnaxe/pass-group/) &ndash; Group password manager extension for the standard unix password manager
       - [galene-stream](https://github.com/erdnaxe/galene-stream/) &ndash; Experiment to stream live feeds to Galène videoconference server
       - [kraby](https://kraby.readthedocs.io/en/latest/) &ndash; Open source 3d-printable hexapod robot with OpenAI Gym environment
       - [screenger](https://github.com/erdnaxe/screenger/) &ndash; Experiment to abuse coil whine to make some screens play music
-
-      On my free time I also contribute to other open source projects and volunteer at [Crans](https://www.crans.org/fr/), [Aurore](https://auro.re/) and [RezoSup](https://www.rezosup.org/map.php) organizations.
+      - [sandboxdb.org](https://sandboxdb.org/) &ndash; Index sandboxing options from various GNU/Linux distributions
   socialIcons:
     - name: github
       url: "https://github.com/erdnaxe"

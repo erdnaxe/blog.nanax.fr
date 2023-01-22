@@ -1,8 +1,6 @@
 # blog.nanax.fr
 
-This is my personal blog on which I share ideas and projects.
-
-Go see [this website](https://blog.nanax.fr/).
+Go see [this blog](https://blog.nanax.fr/).
 
 ## Run this website locally
 

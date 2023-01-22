@@ -26,9 +26,6 @@
 {{- if and .IsHome .Site.Params.homeInfoParams (eq $paginator.PageNumber 1) }}
 {{- with $.Site.Params.homeInfoParams }}
 <article class="first-entry home-info">
-    <header class="entry-header">
-        <h1>{{- .Title | markdownify }}</h1>
-    </header>
     <section class="entry-content">
         <p>{{- .Content | markdownify }}</p>
     </section>
