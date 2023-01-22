@@ -39,7 +39,7 @@ We open `https://espmyadmin.insomnihack.ch/config` and we get some information:
 
 The ESP32-S3 is a newer variant of the ESP32. These chips use Tensilica processors with Xtensa instruction set.
 
-Encryption is activated, it's a good time to open the constructor documentation:
+Encryption is activated, it's a good time to open the manufacturer documentation:
 <https://docs.espressif.com/projects/esp-idf/en/latest/esp32s3/security/flash-encryption.html>.
 We learn that:
 
@@ -192,6 +192,9 @@ undefined4 FUN_42007114(void) {
         MD5Update(md5ctx, mac_addr, 6);
         MD5Final(md5ctx, auStack65);
         // [...]
+        aes_cbc_decrypt(auStack292,0);
+        memset_0_0x58(md5ctx);
+        memset_0_0x22(auStack292);
         iVar5 = __call_memcmp(local_a1, _secret_value, __n_04);
         if (iVar5 == 0) {
           // [...] XOR then triggers "Your flag is :"
