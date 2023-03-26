@@ -148,7 +148,7 @@ with open("key.bin", "wb") as f:
     f.write(key)
 ```
 
-The decrypt and plot entropy using:
+Then decrypt and plot entropy using:
 ```
 espsecure.py decrypt_flash_data --aes_xts -a 0x20000 -k key.bin -o app.dec app.enc
 binwalk -E app.bin
