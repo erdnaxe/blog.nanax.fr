@@ -12,7 +12,7 @@ markup:
 params:
   keywords: [blog, erdnaxe, hardware, software, system, administration]
   description: Blog posts about hardware development and system administration.
-  author: Alexandre Iooss
+  author: erdnaxe
   homeInfoParams:
     Content: |
       ## Highlighted projects
