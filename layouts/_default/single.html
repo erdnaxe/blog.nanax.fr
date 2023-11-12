@@ -37,10 +37,6 @@
     <!-- formats .Content headings by adding an anchor -->
     {{ .Content | replaceRE "(<h[1-6] id=\"([^\"]+)\".+)(</h[1-6]+>)" "${1}<a hidden class=\"anchor\" aria-hidden=\"true\" href=\"#${2}\">#</a>${3}" | safeHTML }}
   </div>
-
-  <hr />
-  <script data-isso-require-author="true" src="https://isso.nanax.fr/js/embed.min.js"></script>
-  <section id="isso-thread"></section>
 </article>
 
 {{- end  }}

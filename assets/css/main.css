@@ -40,11 +40,6 @@ main {
   width: 26px;
 }
 
-/* Fix isso colors */
-.isso-postbox {
-  color: #000;
-}
-
 ul {
   padding: 0 1em;
 }

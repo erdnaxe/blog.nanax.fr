@@ -11,7 +11,6 @@ This website uses :
 
 * [Hugo](https://gohugo.io/) static website generator.
 * A theme based on [Hugo PaperMod](https://github.com/adityatelange/hugo-PaperMod/).
-* [Isso](https://posativ.org/isso/) commenting server.
 
 ### Contact me
 
