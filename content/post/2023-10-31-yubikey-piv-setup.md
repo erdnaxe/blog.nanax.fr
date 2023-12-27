@@ -7,6 +7,11 @@ description: "Quick guide to correctly setup Yubikey PIV applet to use age and S
 keywords: ["Yubikey", "PIV", "applet", "age", "SSH"]
 ---
 
+<!--
+TODO: introduce PIV and CCID
+TODO: explain why different from FIDO
+-->
+
 ## Yubikey PIV applet factory reset
 
 > **Warning:**
@@ -24,6 +29,10 @@ Your YubiKey now has the default PIN, PUK and Management Key:
   	PUK:	12345678
   	Management Key:	010203040506070801020304050607080102030405060708
 ```
+
+<!--
+TODO: explain PIN, PUK and management key
+-->
 
 ## Initial setup and age key setup
 
@@ -122,6 +131,11 @@ Slot 82:
 
 ## SSH key setup
 
+<!--
+TODO: introduce ECCP256
+TODO: introduce CN
+-->
+
 Let's generate a SSH key in slot 9a with a PIN and touch policy:
 
 ```
@@ -138,7 +152,11 @@ To use this key, you need to hint the provider to your SSH client.
 You may add to `~/.ssh/config`:
 
 ```
+# On ArchLinux-based distributions
 PKCS11Provider /usr/lib/opensc-pkcs11.so
+
+# On Debian/Ubuntu-based distributions
+PKCS11Provider /usr/lib/x86_64-linux-gnu/opensc-pkcs11.so
 ```
 
 Now everything should be ready to go!
