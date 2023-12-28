@@ -2,8 +2,8 @@
 categories:
 - Web
 date: "2023-12-27"
-title: "Write-up of SideQuest 4 (TryHackMe Advent of Cyber 2023)"
-description: "Write-up of the SideQuest 4 of TryHackMe Advent of Cyber 2023."
+title: "Write-up of The Bandit Surfer (SideQuest 4 of TryHackMe Advent of Cyber 2023)"
+description: "Write-up of Bandit Surfer challenge, SideQuest 4 of TryHackMe Advent of Cyber 2023."
 keywords: ["surfingyetiiscomingtotown", "Flask", "PIN", "code", "sqli", "pycurl", "sudo", "bashrc"]
 ---
 
