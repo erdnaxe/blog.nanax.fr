@@ -163,9 +163,9 @@ root ./static dirs [] files ['.gitkeep', 'Logo_Black.svg.gz', 'Logo_White.svg.gz
 
 {{< figure src="/assets/images/hardware-longrange2/meme-2.png" alt="This is not SPIFFS" >}}
 
-From the extensions, we expect Protobuf. This hypothesis is quickly confirm using `protoc --decode_raw < prefs/db.proto`.
+From the extensions, we expect Protobuf. This hypothesis is quickly confirmed using `protoc --decode_raw < prefs/db.proto`.
 To make sense of these structure, we need to decode them with some Protobuf definition.
-Searching `'config.proto'` in Meshtastic leads to `./src/mesh/NodeDB.cpp` which calls `loadProto` with:
+Searching `config.proto` in Meshtastic leads to `./src/mesh/NodeDB.cpp` which calls `loadProto` with:
 
   * `/prefs/db.proto` as `meshtastic_DeviceState`,
   * `/prefs/config.proto` as `meshtastic_LocalConfig`,
@@ -303,21 +303,21 @@ Let's ignore corrupted frames for now.
 After a bit of searching, we found [a discourse thread explaining the packet structure](https://meshtastic.discourse.group/t/meshtastic-lora-packet-size/7953/8):
 
 ```
-       16 symbols      3 bytes     max 255 bytes          2 bytes
-     ┌─────────────┬───────────────┬─────────────────┬───────────┐
-     │ (Preambule) │  Lora Header  │     Payload     │Payload CRC│
-     └─────────────┴┬─────────────┬┴┬───────────────┬┴───────────┘
-  ┌─────────────────┘             │ └──┐            └──────────────┐
-  │1 byte 3bit 1bit 1 byte   4bit │    │ 16 bytes    max 239 bytes │
- ┌┴──────┬────┬───┬────────┬──────┴┐  ┌┴───────────┬───────────────┴┐
- │Length │FEC │Has│ Header │Padding│  │ Meshtastic │   Meshtastic   │
- │       │CR  │CRC│  CRC   │       │  │   Header   │ Payload (Proto)│
- └───────┴────┴───┴────────┴───────┘  └┬──────────┬┴────────────────┘
-                      ┌────────────────┘          └──────────────────────┐
-                      │4 bytes  4 bytes  4 bytes  1 byte  1 byte  2 bytes│
-                     ┌┴───────┬────────┬────────┬───────┬───────┬────────┴┐
-                     │  Dest  │  From  │ PktId  │ Flags │ Hash  │  Align  │
-                     └────────┴────────┴────────┴───────┴───────┴─────────┘
+    16 symbols          3 bytes             max 255 bytes        2 bytes
+  ┌─────────────┬─────────────────────┬───────────────────────┬───────────┐
+  │ (Preambule) │     Lora Header     │        Payload        │Payload CRC│
+  └─────────────┴┬───────────────────┬┴┬─────────────────────┬┴───────────┘
+    ┌╌╌╌╌╌╌╌╌╌╌╌╌┘                  ┌┘ └┐                    └╌╌╌╌╌╌╌╌╌╌╌╌┐
+    ╎1 byte 3bit 1bit 1 byte   4bit ╎   ╎   16 bytes       max 239 bytes  ╎
+   ┌┴──────┬────┬───┬────────┬──────┴┐ ┌┴────────────────┬────────────────┴┐
+   │Length │FEC │Has│ Header │Padding│ │   Meshtastic    │   Meshtastic    │
+   │       │CR  │CRC│  CRC   │       │ │     Header      │ Payload (Proto) │
+   └───────┴────┴───┴────────┴───────┘ └┬──────────┬─────┴─────────────────┘
+                       ┌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌┘          └╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌┐
+                       ╎4 bytes  4 bytes  4 bytes  1 byte  1 byte  2 bytes╎
+                      ┌┴───────┬────────┬────────┬───────┬───────┬────────┴┐
+                      │  Dest  │  From  │ PktId  │ Flags │ Hash  │  Align  │
+                      └────────┴────────┴────────┴───────┴───────┴─────────┘
 ```
 
 The goal is to decode the encrypted Meshtastic payload.
@@ -347,7 +347,7 @@ def dec(nonce, payload):
     key = bytes.fromhex("cef8db8e8e6017fd6dcca21db8a1476d451480acd7f4f9f769a763f528c011f7")
     nonce = bytes.fromhex(nonce)
     cipher = AES.new(key, AES.MODE_CTR, nonce=b"", initial_value=nonce)
-    print(cipher.decrypt(bytes.fromhex(payload)).hex())
+    print(cipher.decrypt(bytes.fromhex(payload)).hex())  # then use https://protobuf-decoder.netlify.app/
 
 dec("a620df2d 00000000 bc4b6cfa 00000000", "5afacd43977600361b8cc3f50fbd5d")
 # here please
