@@ -1,0 +1,48 @@
+my_node {
+  my_node_num: 4201496772
+  reboot_count: 6
+  min_app_version: 30200
+}
+owner {
+  id: "!fa6dc0c4"
+  long_name: "Peter"
+  short_name: "c0c4"
+  macaddr: "\364\022\372m\300\304"
+  hw_model: LILYGO_TBEAM_S3_CORE
+}
+version: 22
+did_gps_reset: true
+node_db_lite {
+  num: 4201496772
+  user {
+    id: "!fa6dc0c4"
+    long_name: "Peter"
+    short_name: "c0c4"
+    macaddr: "\364\022\372m\300\304"
+    hw_model: LILYGO_TBEAM_S3_CORE
+  }
+  position {
+  }
+  device_metrics {
+    battery_level: 58
+    voltage: 3.784
+    air_util_tx: 0.0335555561
+  }
+}
+node_db_lite {
+  num: 4201401276
+  user {
+    id: "!fa6c4bbc"
+    long_name: "Adam"
+    short_name: "Adam"
+    macaddr: "\364\022\372lK\274"
+    hw_model: HELTEC_V3
+  }
+  snr: 6.75
+  device_metrics {
+    battery_level: 76
+    voltage: 3.983
+    channel_utilization: 3.52833343
+    air_util_tx: 0.0200555567
+  }
+}

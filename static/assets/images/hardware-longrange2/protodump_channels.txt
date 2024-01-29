@@ -1,0 +1,46 @@
+channels {
+  settings {
+    psk: "\001"
+  }
+  role: PRIMARY
+}
+channels {
+  index: 1
+  settings {
+    psk: "\316\370\333\216\216`\027\375m\314\242\035\270\241GmE\024\200\254\327\364\371\367i\247c\365(\300\021\367"
+    name: "Buddies"
+    id: 1
+  }
+  role: SECONDARY
+}
+channels {
+  index: 2
+  settings {
+  }
+}
+channels {
+  index: 3
+  settings {
+  }
+}
+channels {
+  index: 4
+  settings {
+  }
+}
+channels {
+  index: 5
+  settings {
+  }
+}
+channels {
+  index: 6
+  settings {
+  }
+}
+channels {
+  index: 7
+  settings {
+  }
+}
+version: 22
