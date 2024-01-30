@@ -343,6 +343,8 @@ void CryptoEngine::initNonce(uint32_t fromNode, uint64_t packetId)
 
 Using this knowledge, we build the following Python script to decode our frames:
 ```python
+from Crypto.Cipher import AES
+
 def dec(nonce, payload):
     key = bytes.fromhex("cef8db8e8e6017fd6dcca21db8a1476d451480acd7f4f9f769a763f528c011f7")
     nonce = bytes.fromhex(nonce)
