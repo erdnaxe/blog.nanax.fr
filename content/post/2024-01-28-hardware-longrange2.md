@@ -164,7 +164,7 @@ root ./static dirs [] files ['.gitkeep', 'Logo_Black.svg.gz', 'Logo_White.svg.gz
 {{< figure src="/assets/images/hardware-longrange2/meme-2.png" alt="This is not SPIFFS" >}}
 
 From the extensions, we expect Protobuf. This hypothesis is quickly confirmed using `protoc --decode_raw < prefs/db.proto`.
-To make sense of these structure, we need to decode them with some Protobuf definition.
+To make sense of these structures, we need to decode them with some Protobuf definition.
 Searching `config.proto` in Meshtastic leads to `./src/mesh/NodeDB.cpp` which calls `loadProto` with:
 
   * `/prefs/db.proto` as `meshtastic_DeviceState`,
@@ -322,7 +322,7 @@ After a bit of searching, we found [a discourse thread explaining the packet str
 
 The goal is to decode the encrypted Meshtastic payload.
 Meshtastic uses AES256-CTR and we already know the key from the flash dump.
-AES in counter mode also require knowning a nonce to decrypt.
+AES in counter mode also requires knowning a nonce to decrypt.
 We find the nonce generation function in the source code:
 ```C
 // ./src/mesh/CryptoEngine.cpp
