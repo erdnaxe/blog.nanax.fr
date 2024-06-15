@@ -42,6 +42,7 @@
 
 # ESP-IDF application image
 # URL: https://github.com/espressif/esp-idf/blob/v5.0/components/bootloader_support/include/esp_app_format.h
+0	ubyte		0xE9
 >32     ulelong         0xABCD5432      ESP-IDF application image
 >>12    uleshort        0x0000          for ESP32
 >>12    uleshort        0x0002          for ESP32-S2
